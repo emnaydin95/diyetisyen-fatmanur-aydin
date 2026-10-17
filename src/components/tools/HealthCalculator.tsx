@@ -245,7 +245,7 @@ export default function HealthCalculator() {
                 <MessageCircle className="w-4 h-4" />
                 <span>
                   {activeTab === "bmi"
-                    ? "Bu Sonucu Dyt. Fatmanur Hanım'a İlet"
+                    ? "Bu Sonucu Diyetisyen Fatmanur Hanım'a İlet"
                     : "Su Hedefimi Fatmanur Hanım'la Paylaş"}
                 </span>
                 <ArrowRight className="w-3.5 h-3.5" />

@@ -52,7 +52,7 @@ export default function ContactLocation() {
                 Ön Bilgi & Randevu Talebi
               </h3>
               <p className="text-xs text-mutedSlate mb-6 leading-relaxed">
-                Formu doldurduğunuzda bilgileriniz otomatik olarak WhatsApp mesajına dönüştürülür ve doğrudan Dyt. Fatmanur Hanım'a iletilir.
+                Formu doldurduğunuzda bilgileriniz otomatik olarak WhatsApp mesajına dönüştürülür ve doğrudan Diyetisyen Fatmanur Hanım'a iletilir.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-4">

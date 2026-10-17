@@ -5,8 +5,8 @@ import { Clock, Flame, ArrowRight, Instagram } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Diyetisyen Onaylı Sağlıklı Tarifler | Dyt. Fatmanur Aydın",
-  description: "Fit tatlılar, detoks içecekleri, pratik ve sağlıklı ara öğün tarifleri. Dyt. Fatmanur Aydın onaylı besleyici mutfak rehberi.",
+  title: "Diyetisyen Onaylı Sağlıklı Tarifler | Diyetisyen Fatmanur Aydın",
+  description: "Fit tatlılar, detoks içecekleri, pratik ve sağlıklı ara öğün tarifleri. Diyetisyen Fatmanur Aydın onaylı besleyici mutfak rehberi.",
 };
 
 export default function RecipesPage() {

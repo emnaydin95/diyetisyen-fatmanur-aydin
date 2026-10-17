@@ -33,9 +33,9 @@ export interface ReviewItem {
 export const siteConfig = {
   brand: {
     name: "Diyetisyen Fatmanur Aydın",
-    shortName: "Dyt. Fatmanur Aydın",
-    title: "Ankara Keçiören Diyetisyen | Dyt. Fatmanur Aydın | Online & Yüz Yüze Beslenme Danışmanlığı",
-    description: "Keçiören Etlik ve Online Diyetisyen Dyt. Fatmanur Aydın ile yasaksız, sürdürülebilir ve bilimsel beslenme programları. Kişiye özel kilo yönetimi, insülin direnci ve tıbbi beslenme tedavisi.",
+    shortName: "Diyetisyen Fatmanur Aydın",
+    title: "Ankara Keçiören Diyetisyen | Diyetisyen Fatmanur Aydın | Online & Yüz Yüze Beslenme Danışmanlığı",
+    description: "Keçiören Etlik ve Online Diyetisyen Fatmanur Aydın ile yasaksız, sürdürülebilir ve bilimsel beslenme programları. Kişiye özel kilo yönetimi, insülin direnci ve tıbbi beslenme tedavisi.",
     tagline: "Yasaklarla Değil, Sürdürülebilir Dengeyle Sağlıklı Yaşam",
     university: "Biruni Üniversitesi Beslenme ve Diyetetik",
   },

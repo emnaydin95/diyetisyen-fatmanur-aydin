@@ -20,7 +20,7 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!recipe) return {};
 
   return {
-    title: `${recipe.title} | Dyt. Fatmanur Aydın Sağlıklı Tarifler`,
+    title: `${recipe.title} | Diyetisyen Fatmanur Aydın Sağlıklı Tarifler`,
     description: recipe.description,
   };
 }

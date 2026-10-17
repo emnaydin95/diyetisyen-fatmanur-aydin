@@ -181,7 +181,7 @@ export default function Services() {
         <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-brandSurface border border-borderHairline flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
           <div className="text-center sm:text-left">
             <h4 className="font-bold text-base text-charcoal">Hangi programın size uygun olduğuna emin değil misiniz?</h4>
-            <p className="text-xs sm:text-sm text-mutedSlate mt-1">Sağlık hedeflerinizi iletin, Dyt. Fatmanur Aydın ile birlikte en uygun yol haritasını çizelim.</p>
+            <p className="text-xs sm:text-sm text-mutedSlate mt-1">Sağlık hedeflerinizi iletin, Diyetisyen Fatmanur Aydın ile birlikte en uygun yol haritasını çizelim.</p>
           </div>
           <Link
             href="/hizmetler"

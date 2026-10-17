@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Keçiören Diyetisyen",
     "Etlik Diyetisyen",
     "Aşağı Eğlence Diyetisyen",
-    "Dyt. Fatmanur Aydın",
+    "Diyetisyen Fatmanur Aydın",
     "Online Diyetisyen",
     "Kilo Verme Keçiören",
     "İnsülin Direnci Beslenme",

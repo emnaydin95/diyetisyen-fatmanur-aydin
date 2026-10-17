@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/siteConfig";
 
 export const metadata: Metadata = {
   title: "Hakkımda | Diyetisyen Fatmanur Aydın - Keçiören Ankara",
-  description: "Dyt. Fatmanur Aydın kimdir? Biruni Üniversitesi Beslenme ve Diyetetik mezuniyeti, klinik deneyimi, sürdürülebilir beslenme felsefesi.",
+  description: "Diyetisyen Fatmanur Aydın kimdir? Biruni Üniversitesi Beslenme ve Diyetetik mezuniyeti, klinik deneyimi, sürdürülebilir beslenme felsefesi.",
 };
 
 export default function AboutPage() {
@@ -20,7 +20,7 @@ export default function AboutPage() {
             Uzman Biyografisi & Yaklaşım
           </span>
           <h1 className="editorial-title text-4xl sm:text-5xl font-bold mt-2 text-charcoal">
-            Dyt. Fatmanur Aydın
+            Diyetisyen Fatmanur Aydın
           </h1>
           <p className="text-mutedSlate text-base mt-3">
             Biruni Üniversitesi Beslenme ve Diyetetik Bölümü Mezunu • Klinik Beslenme Uzmanı
@@ -34,14 +34,14 @@ export default function AboutPage() {
               <div className="w-full aspect-[4/5] rounded-2xl overflow-hidden relative group">
                 <img
                   src="/images/clinic/consultation-desk.jpg"
-                  alt="Dyt. Fatmanur Aydın Çalışma Masası ve Klinik"
+                  alt="Diyetisyen Fatmanur Aydın Çalışma Masası ve Klinik"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-5 text-white">
                   <span className="text-[10px] font-bold uppercase tracking-widest bg-sage px-2.5 py-0.5 rounded-full w-max mb-1">
                     Keçiören / Etlik
                   </span>
-                  <span className="editorial-title text-xl font-bold">Dyt. Fatmanur Aydın</span>
+                  <span className="editorial-title text-xl font-bold">Diyetisyen Fatmanur Aydın</span>
                   <span className="text-[11px] text-white/80">Klinik Muayene ve Danışma Alanı</span>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function AboutPage() {
               <div className="aspect-[4/3] overflow-hidden relative">
                 <img
                   src="/images/clinic/consultation-main.jpg"
-                  alt="Dyt. Fatmanur Aydın Muayene Odası"
+                  alt="Diyetisyen Fatmanur Aydın Muayene Odası"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

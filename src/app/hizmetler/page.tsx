@@ -16,7 +16,7 @@ import {
 import { siteConfig } from "@/config/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Beslenme Paketleri & Hizmetler | Dyt. Fatmanur Aydın",
+  title: "Beslenme Paketleri & Hizmetler | Diyetisyen Fatmanur Aydın",
   description: "Keçiören yüz yüze ve online diyet programları. İnsülin direnci, PKOS, gebe/emzirme beslenmesi, kilo alma, sporcu beslenmesi ve klinik vücut analizi.",
 };
 
@@ -53,7 +53,7 @@ export default function ServicesPage() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-terracotta">
-            Dyt. Fatmanur Aydın Danışmanlık Modelleri
+            Diyetisyen Fatmanur Aydın Danışmanlık Modelleri
           </span>
           <h1 className="editorial-title text-4xl sm:text-5xl font-bold mt-2 text-charcoal">
             Beslenme & Diyet Hizmetleri
