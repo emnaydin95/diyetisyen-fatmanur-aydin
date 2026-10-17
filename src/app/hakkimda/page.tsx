@@ -134,7 +134,7 @@ export default function AboutPage() {
                 <img
                   src="/images/clinic/tanita-analyzer.jpg"
                   alt="Tanita Profesyonel Vücut Analiz Cihazı"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-4 text-center">
