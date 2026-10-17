@@ -11,12 +11,13 @@ export interface ServiceItem {
 export interface RecipeItem {
   slug: string;
   title: string;
-  category: "Fit Tatlılar" | "Detoks & Ödem" | "Pratik Atıştırmalıklar";
+  category: "Fit Tatlılar" | "Detoks & Ödem" | "Pratik Atıştırmalıklar" | "Kahvaltı & Fit Hamur İşi";
   prepTime: string;
   calories: string;
   description: string;
   ingredients: string[];
   instructions: string[];
+  instagramUrl?: string;
   isReels?: boolean;
   views?: string;
 }
@@ -252,25 +253,32 @@ export const siteConfig = {
       ],
     },
     {
-      slug: "nohut-unlu-citir-kraker",
-      title: "Nohut Unlu Çıtır Kraker",
-      category: "Pratik Atıştırmalıklar",
-      prepTime: "15 dk",
-      calories: "110 kcal / porsiyon",
-      description: "Ofiste ve çantada taşıması kolay, kıtır kıtır glutensiz nohut krakeri.",
+      slug: "yulafli-peynirli-tuzlu-kek",
+      title: "Fırında Yulaflı ve Peynirli Tuzlu Kek",
+      category: "Kahvaltı & Fit Hamur İşi",
+      prepTime: "25 dk",
+      calories: "165 kcal / dilim",
+      description: "Klasik haşlanmış yumurta sevmeyenlere veya kahvaltıda pratiklik arayanlara lif ve protein deposu nefis fırın lezzeti.",
       ingredients: [
-        "1 su bardağı nohut unu",
-        "3 yemek kaşığı zeytinyağı",
-        "4-5 yemek kaşığı ılık su",
-        "1 tatlı kaşığı çörek otu & susam",
-        "1 çay kaşığı kekik & biberiye & deniz tuzu",
+        "2 adet yumurta",
+        "1 su bardağı yulaf ezmesi",
+        "2 yemek kaşığı yoğurt",
+        "3 dilim süzme peynir",
+        "1 dilim İzmir tulumu (lezzet için)",
+        "Yarım kapya biber (ince doğranmış)",
+        "1 adet yeşil biber (ince doğranmış)",
+        "1 dal taze yeşil soğan",
+        "Yarım paket kabartma tozu & 1 çay kaşığı tuz",
+        "Üzeri için: Ceviz içi ve çörek otu",
       ],
       instructions: [
-        "Nohut unu, baharatlar ve tohumları karıştırın.",
-        "Zeytinyağı ve suyu ekleyip toparlanan bir hamur elde edin.",
-        "İki yağlı kağıt arasında incecik açıp bıçakla kare kare kesin.",
-        "170 derece fırında 12-15 dakika altın sarısı olana kadar pişirin.",
+        "Derin bir karıştırma kabında yumurta, yoğurt, tuz ve yulaf ezmesini güzelce çırpın.",
+        "İnce kıyılmış kapya biberi, yeşil biberi, yeşil soğanı ve çatalla ufalanmış peynirleri ilave edin.",
+        "Kabartma tozunu ekleyip tüm harcı spatula yardımıyla homojen bir kıvama gelene kadar harmanlayın.",
+        "Karışımı yağlı kağıt serili küçük fırın kabına dökün, üzerine ceviz parçaları ve çörek otu serpiştirin.",
+        "Önceden ısıtılmış 180 derece fırında üzeri altın sarısı kızarana kadar yaklaşık 25 dakika pişirin. Ilık servis yapın.",
       ],
+      instagramUrl: "https://www.instagram.com/diyetisyenfatmanuraydin/",
     },
   ] as RecipeItem[],
   reviews: [

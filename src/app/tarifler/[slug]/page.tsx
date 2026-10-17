@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Clock, Flame, ArrowLeft, CheckCircle2, MessageCircle } from "lucide-react";
+import { Clock, Flame, ArrowLeft, CheckCircle2, MessageCircle, Instagram } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 
 interface Props {
@@ -121,10 +121,34 @@ export default function RecipeDetailPage({ params }: Props) {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold whitespace-nowrap shadow flex items-center gap-2"
+            className="px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold whitespace-nowrap shadow flex items-center gap-2 transition-transform hover:scale-105"
           >
             <MessageCircle className="w-4 h-4" />
             <span>Tarifi WhatsApp'tan Sor</span>
+          </a>
+        </div>
+
+        {/* Instagram Reels Callout */}
+        <div className="bg-gradient-to-r from-charcoal to-[#2B3E36] p-6 sm:p-8 rounded-3xl text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md border border-white/10">
+          <div className="space-y-1 text-center sm:text-left">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-sage-light bg-white/10 px-2.5 py-0.5 rounded-full inline-block">
+              Instagram Reels & Video
+            </span>
+            <h4 className="editorial-title text-xl font-bold text-white">
+              Tarifin Yapılış Videosunu Instagram'da İzleyin
+            </h4>
+            <p className="text-xs text-white/70 max-w-lg">
+              Fatmanur Hanım'ın bu tarifi hazırlarken paylaştığı püf noktalarını ve daha fazla fit tarifi keşfetmek için takip edin.
+            </p>
+          </div>
+          <a
+            href={recipe.instagramUrl || siteConfig.contact.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3.5 bg-white hover:bg-sand text-charcoal rounded-xl text-xs font-bold whitespace-nowrap shadow flex items-center gap-2 transition-all hover:scale-105"
+          >
+            <Instagram className="w-4 h-4 text-terracotta" />
+            <span>{siteConfig.contact.instagram} İzle</span>
           </a>
         </div>
 
