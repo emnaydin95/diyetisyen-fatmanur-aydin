@@ -49,17 +49,20 @@ export default function AboutPage() {
           </div>
 
           <div className="md:col-span-7 space-y-5 text-sm sm:text-base text-charcoal/90 leading-relaxed">
-            <h2 className="editorial-title text-2xl font-bold text-charcoal">
-              Beslenmeyle Barışık, <span className="text-sage italic">Ömür Boyu Süren Bir Denge</span>
+            <h2 className="editorial-title text-2xl sm:text-3xl font-bold text-charcoal">
+              Beslenmeyle Barışık, <span className="text-sage italic">Sürdürülebilir Bir Yaşam</span>
             </h2>
             <p>
-              Merhaba, ben <strong>Diyetisyen Fatmanur Aydın</strong>. Lisans eğitimimi sağlık bilimleri odaklı güçlü akademik altyapısıyla tanınan <strong>Biruni Üniversitesi Beslenme ve Diyetetik</strong> bölümünde tamamladım.
+              Merhaba, ben <strong>Diyetisyen Fatmanur Aydın</strong>. Lisans eğitimimi sağlık bilimleri ve klinik beslenme alanındaki güçlü akademik kadrosuyla öne çıkan <strong>Biruni Üniversitesi Beslenme ve Diyetetik</strong> bölümünde tamamladım.
             </p>
             <p className="text-mutedSlate">
-              Meslek hayatım boyunca yüzlerce danışanımla birlikte deneyimlediğim en temel gerçek şudur: <em>"Bedeninizle savaştığınız hiçbir kısıtlayıcı diyet kalıcı olamaz."</em> Gerçek başarı; tahlillerinizi doğru okumak, sevdiğiniz yiyecekleri dışlamadan porsiyon ve denge kurallarını günlük yaşantınıza entegre etmekle mümkündür.
+              Meslek hayatım boyunca danışanlarımla birlikte deneyimlediğim en temel gerçek şudur: <em>"Bedeninizle savaştığınız hiçbir kısıtlayıcı diyet kalıcı olamaz."</em> Gerçek başarı; sizi sosyal hayatınızdan ve sevdiğiniz yemeklerden koparmak değil; kan tahlillerinizi doğru analiz ederek metabolizmanıza en uygun porsiyon ve denge kurallarını günlük yaşantınıza entegre etmektir.
             </p>
             <p className="text-mutedSlate">
-              Ankara Keçiören / Etlik Aşağı Eğlence'deki kliniğimde yüz yüze; aynı zamanda tüm Türkiye ve dünyanın dört bir yanındaki danışanlarımla online platformda haftalık düzenli görüşmeler gerçekleştiriyoruz.
+              Ankara Keçiören / Etlik'teki kliniğimde Tanita profesyonel vücut analizi eşliğinde yüz yüze; aynı zamanda Türkiye'nin ve dünyanın dört bir yanındaki danışanlarımla online platformda haftalık düzenli görüşmeler gerçekleştiriyoruz.
+            </p>
+            <p className="font-medium text-sage">
+              Aç kalmadan, yasaklarla değil dengeyle ideal kilonuza ulaşmak ve bunu ömür boyu korumak için kliniğimizde sizi ağırlamaktan mutluluk duyarım.
             </p>
           </div>
         </div>
