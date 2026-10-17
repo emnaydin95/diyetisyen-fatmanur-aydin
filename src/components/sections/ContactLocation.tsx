@@ -49,7 +49,7 @@ export default function ContactLocation() {
             {/* Quick Inquiry Form */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-borderHairline shadow-md">
               <h3 className="editorial-title text-2xl font-bold text-charcoal mb-2">
-                Ön Bilgi & Randevu Talebi
+                İlk Görüşme & Randevu Talebi
               </h3>
               <p className="text-xs text-mutedSlate mb-6 leading-relaxed">
                 Formu doldurduğunuzda bilgileriniz otomatik olarak WhatsApp mesajına dönüştürülür ve doğrudan Diyetisyen Fatmanur Hanım'a iletilir.

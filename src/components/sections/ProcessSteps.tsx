@@ -5,7 +5,7 @@ export default function ProcessSteps() {
   const steps = [
     {
       num: "01",
-      title: "Ön Görüşme & Vücut Analizi",
+      title: "İlk Görüşme & Vücut Analizi",
       desc: "Beslenme alışkanlıklarınız, sağlık geçmişiniz, tahlilleriniz ve detaylı vücut kompozisyonunuz (kas/yağ/ödem) analiz edilir.",
       accent: "text-sage/40",
     },
