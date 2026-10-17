@@ -46,8 +46,8 @@ export const siteConfig = {
     defaultWhatsappMessage: "Merhaba Fatmanur Hanım, diyet randevusu oluşturmak istiyorum. Müsait seans saatleri ve süreç hakkında bilgi alabilir miyim?",
     whatsappUrl: "https://wa.me/905426604900?text=Merhaba%20Fatmanur%20Han%C4%B1m%2C%20diyet%20randevusu%20olu%C5%9Fturmak%20istiyorum.%20M%C3%BCsait%20seans%20saatleri%20ve%20s%C3%BCre%C3%A7%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F",
     email: "info@diyetisyenfatmanuraydin.com.tr",
-    instagram: "@dyt.fatmanuraydin",
-    instagramUrl: "https://instagram.com/dyt.fatmanuraydin",
+    instagram: "@diyetisyenfatmanuraydin",
+    instagramUrl: "https://www.instagram.com/diyetisyenfatmanuraydin/",
     googleMapsUrl: "https://maps.app.goo.gl/d8SP1qVd95PDrzCn9?g_st=ic",
   },
   location: {
