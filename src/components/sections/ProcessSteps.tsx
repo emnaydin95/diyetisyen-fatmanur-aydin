@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 
 export default function ProcessSteps() {
   const steps = [
@@ -72,6 +72,31 @@ export default function ProcessSteps() {
               )}
             </div>
           ))}
+        </div>
+
+        {/* Punchy Philosophy Callout Card */}
+        <div className="mt-12 bg-white rounded-3xl p-8 sm:p-10 border border-borderHairline shadow-sm text-center max-w-4xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-sage-soft text-sage text-xs font-bold tracking-wide">
+            <Sparkles className="w-3.5 h-3.5 text-sage" />
+            <span>Kişiye Özel Yaklaşım</span>
+          </div>
+          <h3 className="editorial-title text-xl sm:text-2xl lg:text-3xl font-bold text-charcoal max-w-2xl mx-auto leading-snug">
+            "Amaç geçici bir şok diyet değil; bıraktığınızda geri almayacağınız sürdürülebilir bir düzen."
+          </h3>
+          <p className="text-xs sm:text-sm text-mutedSlate max-w-2xl mx-auto leading-relaxed">
+            Herkese aynı hazır şablon listeyi vermiyoruz. Çalışma saatlerinizi, sevdiğiniz yemekleri ve sağlık geçmişinizi dinliyor; yaşam tarzınıza tam oturan ve aç bırakmayan bir beslenme planı oluşturuyoruz.
+          </p>
+          <div className="pt-2 flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-charcoal">
+            <span className="flex items-center gap-1.5 text-sage">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Hazır Şablon Liste Yok
+            </span>
+            <span className="flex items-center gap-1.5 text-sage">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Aç Kalmadan Sürdürülebilir Sonuç
+            </span>
+            <span className="flex items-center gap-1.5 text-sage">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Birebir Haftalık Takip
+            </span>
+          </div>
         </div>
 
       </div>

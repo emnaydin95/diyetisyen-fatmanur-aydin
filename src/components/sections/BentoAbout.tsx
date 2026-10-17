@@ -39,13 +39,16 @@ export default function BentoAbout() {
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-4 text-xs font-semibold text-sage">
               <span className="flex items-center gap-1.5">
+                <CheckCircle className="w-4 h-4 text-emerald-600" /> Hazır Şablon Liste Yok
+              </span>
+              <span className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-emerald-600" /> Aç Kalmadan Doygunluk
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-emerald-600" /> Yasaksız Sosyal Yaşam
               </span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle className="w-4 h-4 text-emerald-600" /> Sürdürülebilir Alışkanlık
+                <CheckCircle className="w-4 h-4 text-emerald-600" /> Kalıcı Alışkanlık
               </span>
             </div>
           </div>
