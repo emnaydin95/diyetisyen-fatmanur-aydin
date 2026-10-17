@@ -26,10 +26,13 @@ export default function Footer() {
                 <Phone className="w-3.5 h-3.5 text-sage-light flex-shrink-0" />
                 <span>{siteConfig.contact.phone}</span>
               </p>
-              <p className="flex items-center gap-2">
-                <Clock className="w-3.5 h-3.5 text-sage-light flex-shrink-0" />
-                <span>{siteConfig.location.workingHours}</span>
-              </p>
+              <div className="flex items-start gap-2 text-white/70">
+                <Clock className="w-3.5 h-3.5 text-sage-light flex-shrink-0 mt-0.5" />
+                <div className="space-y-0.5">
+                  <p>Salı – Cuma: 09:00 – 20:00</p>
+                  <p>Cumartesi: 08:00 – 15:00 <span className="text-white/40">(Pzr & Pzt: Kapalı)</span></p>
+                </div>
+              </div>
             </div>
             <div className="pt-2 flex items-center gap-3">
               <a

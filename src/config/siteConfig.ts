@@ -66,7 +66,13 @@ export const siteConfig = {
       latitude: 39.9723,
       longitude: 32.8465,
     },
-    workingHours: "Pazartesi - Cumartesi: 09:30 - 18:30",
+    workingHours: "Salı - Cuma: 09:00 - 20:00 | Cumartesi: 08:00 - 15:00",
+    workingDaysSummary: "Salı - Cumartesi (Pazar & Pazartesi Kapalı)",
+    schedule: [
+      { days: "Salı - Cuma", hours: "09:00 - 20:00" },
+      { days: "Cumartesi", hours: "08:00 - 15:00" },
+      { days: "Pazar & Pazartesi", hours: "Kapalı" },
+    ],
   },
   seo: {
     serviceAreas: [

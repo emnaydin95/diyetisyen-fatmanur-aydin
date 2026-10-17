@@ -168,10 +168,15 @@ export default function ContactLocation() {
                   <MapPin className="w-4 h-4 text-sage flex-shrink-0 mt-0.5" />
                   <span>{siteConfig.location.street}, {siteConfig.location.district} / {siteConfig.location.city}</span>
                 </p>
-                <p className="flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-sage flex-shrink-0" />
-                  <span>{siteConfig.location.workingHours}</span>
-                </p>
+                <div className="flex items-start gap-2 pt-0.5">
+                  <Clock className="w-4 h-4 text-sage flex-shrink-0 mt-0.5" />
+                  <div className="space-y-0.5">
+                    <p className="font-semibold text-charcoal">Çalışma Saatleri</p>
+                    <p className="text-charcoal">Salı – Cuma: <span className="font-semibold text-charcoal">09:00 – 20:00</span></p>
+                    <p className="text-charcoal">Cumartesi: <span className="font-semibold text-charcoal">08:00 – 15:00</span></p>
+                    <p className="text-mutedSlate text-[11px]">Pazar & Pazartesi: Kapalı</p>
+                  </div>
+                </div>
                 <p className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-sage flex-shrink-0" />
                   <span>{siteConfig.contact.phone}</span>
