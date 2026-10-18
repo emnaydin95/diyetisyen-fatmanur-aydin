@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { MapPin, Navigation, Send, Compass, Phone, Clock, Instagram, CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 import FaqAccordion from "./FaqAccordion";
@@ -132,6 +133,14 @@ export default function ContactLocation() {
                     className="w-full px-4 py-3 rounded-xl bg-brandBg border border-borderHairline text-sm focus:outline-none focus:ring-2 focus:ring-sage font-medium"
                   />
                 </div>
+
+                <p className="text-[11px] text-mutedSlate leading-relaxed">
+                  Randevu talebi göndererek{" "}
+                  <Link href="/kvkk-aydinlatma-metni" target="_blank" className="text-terracotta underline hover:text-terracotta-dark font-medium">
+                    KVKK Aydınlatma Metni
+                  </Link>
+                  &apos;ni okuduğunuzu ve kişisel verilerinizin randevu organizasyonu amacıyla işlenmesini kabul etmiş sayılırsınız.
+                </p>
 
                 <button
                   type="submit"

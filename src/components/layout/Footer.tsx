@@ -101,10 +101,19 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-white/40 text-[11px]">
+        {/* Bottom Legal & Copyright */}
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-white/40 text-[11px]">
+          <div className="flex flex-wrap items-center gap-3 text-white/60 text-[11px]">
+            <Link href="/kvkk-aydinlatma-metni" className="hover:text-white transition-colors">
+              KVKK Aydınlatma Metni
+            </Link>
+            <span>•</span>
+            <Link href="/cerez-politikasi" className="hover:text-white transition-colors">
+              Çerez Politikası
+            </Link>
+          </div>
           <p>&copy; {new Date().getFullYear()} {siteConfig.brand.name}. Tüm Hakları Saklıdır.</p>
-          <p className="text-right">
+          <p className="text-center md:text-right">
             Sitede yer alan bilgiler genel beslenme rehberi niteliğinde olup hekim teşhisi ve tıbbi tedavi yerine geçmez.
           </p>
         </div>

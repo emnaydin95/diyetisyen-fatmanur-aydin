@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import MobileStickyBar from "@/components/layout/MobileStickyBar";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
+import CookieConsent from "@/components/layout/CookieConsent";
 
 export const metadata: Metadata = {
   title: siteConfig.brand.title,
@@ -133,6 +134,7 @@ export default function RootLayout({
         <Footer />
         <MobileStickyBar />
         <WhatsAppFloat />
+        <CookieConsent />
       </body>
     </html>
   );
