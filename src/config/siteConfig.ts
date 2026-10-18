@@ -178,7 +178,7 @@ export const siteConfig = {
       features: [
         "Biyoelektrik empedans ile hassas vücut kompozisyonu tespiti",
         "Bölgesel (sağ-sol kol/bacak ve gövde) kas-yağ analizi",
-        "Hücre içi ve hücre dışı sıvı (ödem) dengesi",
+        "Hücre içi ve hücre dışı sıvı (su) dengesi",
         "Ölçüm sonrası detaylı grafik çıktısı ve uzman yorumlaması",
       ],
     },
@@ -398,7 +398,7 @@ export const siteConfig = {
   faqs: [
     {
       q: "İlk yüz yüze görüşmede neler yapılıyor?",
-      a: "Öncelikle varsa son 6 aya ait kan tahlilleriniz incelenir, tıbbi geçmişiniz, beslenme alışkanlıklarınız ve günlük rutininiz konuşulur. Ardından klinik vücut analizi cihazımızla detaylı kas, yağ ve ödem dağılımınız ölçülerek tamamen size özel ilk haftalık listeniz hazırlanır.",
+      a: "Öncelikle varsa son 6 aya ait kan tahlilleriniz incelenir, tıbbi geçmişiniz, beslenme alışkanlıklarınız ve günlük rutininiz konuşulur. Ardından klinik vücut analizi cihazımızla detaylı kas, yağ ve su dağılımınız ölçülerek tamamen size özel ilk haftalık listeniz hazırlanır.",
     },
     {
       q: "Online diyet programı nasıl işliyor?",

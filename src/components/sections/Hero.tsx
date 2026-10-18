@@ -117,7 +117,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="text-xs font-bold text-charcoal">Tanita Vücut Analizi</p>
-                  <p className="text-[11px] text-mutedSlate">Kas, yağ ve ödem ölçümü</p>
+                  <p className="text-[11px] text-mutedSlate">Kas, yağ ve su (sıvı) analizi</p>
                 </div>
               </div>
 

@@ -6,7 +6,7 @@ export default function ProcessSteps() {
     {
       num: "01",
       title: "İlk Görüşme & Vücut Analizi",
-      desc: "Beslenme alışkanlıklarınız, sağlık geçmişiniz, tahlilleriniz ve detaylı vücut kompozisyonunuz (kas/yağ/ödem) analiz edilir.",
+      desc: "Beslenme alışkanlıklarınız, sağlık geçmişiniz, tahlilleriniz ve detaylı vücut kompozisyonunuz (kas/yağ/su) analiz edilir.",
       accent: "text-sage/40",
     },
     {
