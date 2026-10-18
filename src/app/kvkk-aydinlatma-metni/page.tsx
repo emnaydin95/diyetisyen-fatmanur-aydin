@@ -175,7 +175,7 @@ export default function KVKKPage() {
               <h2 className="editorial-title text-xl font-bold text-charcoal">7. Başvuru Usulü</h2>
             </div>
             <p className="text-xs sm:text-sm text-mutedSlate leading-relaxed">
-              Yukarıda belirtilen haklarınızı kullanmak için kimliğinizi tevsik edici belgeler ile birlikte yazılı olarak kliniğimizin <strong>{siteConfig.location.street}, {siteConfig.location.district} / {siteConfig.location.city}</strong> adresine elden teslim edebilir veya <strong>{siteConfig.contact.email}</strong> adresine güvenli elektronik imzalı olarak iletebilirsiniz. Talepleriniz en geç 30 (otuz) gün içerisinde ücretsiz olarak sonuçlandırılacaktır.
+              Yukarıda belirtilen haklarınızı kullanmak için taleplerinizi kliniğimizin <strong>{siteConfig.location.street}, {siteConfig.location.district} / {siteConfig.location.city}</strong> adresine yazılı olarak şahsen teslim edebilir veya kliniğimizin <strong>{siteConfig.contact.phone}</strong> numaralı telefon hattı üzerinden bize iletebilirsiniz. Talepleriniz mevzuat çerçevesinde titizlikle incelenerek sonuçlandırılacaktır.
             </p>
           </section>
 
