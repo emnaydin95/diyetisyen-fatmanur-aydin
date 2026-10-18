@@ -59,7 +59,7 @@ export default function ServicesPage() {
             Beslenme & Diyet Hizmetleri
           </h1>
           <p className="text-mutedSlate text-sm sm:text-base mt-3 leading-relaxed">
-            Google Haritalar işletme profilimizde doğrulanmış tüm hizmetlerimiz; bilimsel temelli, kişiye özel ve sürdürülebilir yaşam odaklıdır.
+            Kliniğimizde ve online platformda sunduğumuz tüm danışmanlık hizmetlerimiz; bilimsel temelli, kişiye özel ve sürdürülebilir yaşam odaklıdır.
           </p>
         </div>
 

@@ -72,14 +72,14 @@ export default function BentoAbout() {
             </div>
           </div>
 
-          {/* Box 3 (5 cols): Hibrit Model */}
+          {/* Box 3 (5 cols): Yüz Yüze ve Online */}
           <div className="lg:col-span-5 bg-white rounded-3xl p-8 border border-borderHairline hover:shadow-md transition-shadow flex flex-col justify-between">
             <div>
               <div className="w-12 h-12 rounded-2xl bg-sage-soft text-sage flex items-center justify-center mb-6">
                 <Building className="w-6 h-6" />
               </div>
               <h3 className="editorial-title text-2xl font-bold text-charcoal mb-3">
-                Yüz Yüze & Online Hibrit Model
+                Yüz Yüze & Online Danışmanlık
               </h3>
               <p className="text-mutedSlate text-sm leading-relaxed">
                 Ankara Keçiören / Etlik Sarayköy Sokak'taki nezih kliniğimizde yüz yüze vücut analizi ve görüşmeler; ya da Türkiye ve yurt dışındaki danışanlarımız için görüntülü online diyet takibi.

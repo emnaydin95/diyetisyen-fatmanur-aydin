@@ -61,7 +61,7 @@ export default function Services() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-terracotta">
-              Google İşletme Doğrulamalı
+              Klinik & Online Danışmanlık
             </span>
             <h2 className="editorial-title text-3xl sm:text-4xl font-bold mt-2 text-charcoal">
               Uzmanlık Alanlarımız & <span className="text-sage italic">Beslenme Programları</span>
