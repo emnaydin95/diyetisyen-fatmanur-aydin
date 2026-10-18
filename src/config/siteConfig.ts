@@ -289,6 +289,33 @@ export const siteConfig = {
       ],
       instagramUrl: "https://www.instagram.com/reel/DGgZioZIJwq/",
     },
+    {
+      slug: "tavada-fit-sufle",
+      title: "Tavada Sağlıklı Fit Sufle",
+      category: "Fit Tatlılar",
+      prepTime: "15 dk",
+      calories: "155 kcal / porsiyon",
+      description: "Fırın açmaya gerek kalmadan, tavada buhar yöntemiyle hazırlanan; 2 değişim meyve, 2 değişim et ve 1 değişim EYG dengeli, içi akışkan rafine şekersiz fit sufle.",
+      image: "/images/recipes/sufle-fit.jpg",
+      ingredients: [
+        "2 adet olgun muz (2 değişim meyve)",
+        "2 adet yumurta (2 değişim et)",
+        "2 yemek kaşığı yulaf unu (1 değişim EYG)",
+        "1.5 yemek kaşığı ham kakao",
+        "1 çay kaşığı kabartma tozu",
+        "İç dolgusu için: 2-3 kare bitter çikolata (%70+)",
+      ],
+      instructions: [
+        "Olgun muzları derin bir kasede çatal yardımıyla püre haline getirin; yumurtalarla birlikte homojen ve köpüklü olana kadar çırpın.",
+        "Üzerine ham kakao, yulaf unu ve kabartma tozunu ilave edip pürüzsüz ve akışkan bir sufle harcı elde edin.",
+        "Hafifçe yağlanmış 2 adet ısıya dayanıklı fincana veya sufle kabına harcı eşit şekilde paylaştırın.",
+        "Her kabın tam ortasına 1'er kare bitter çikolata batırın.",
+        "Geniş ve yayvan bir tavanın tabanına 1-2 parmak kadar sıcak su ekleyip fincanları tavanın içine yerleştirin.",
+        "Buhar damlacıklarının suflelerin üzerine gelmemesi için tencere kapağının altına temiz bir mutfak havlusu gerip kapağı sıkıca kapatın.",
+        "Kısık-orta ateşte tavanın kapağını hiç açmadan tam 8-10 dakika buharda pişirin. Ocaktan alıp içi akışkan kıvamdayken sıcak sıcak servis yapın.",
+      ],
+      instagramUrl: "https://www.instagram.com/reel/DFxJiy3onfG/",
+    },
   ] as RecipeItem[],
   reviews: [
     {
