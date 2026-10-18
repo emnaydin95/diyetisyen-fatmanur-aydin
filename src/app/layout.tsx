@@ -1,51 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const playfair = localFont({
-  src: [
-    {
-      path: "../../public/fonts/playfair-display-latin.woff2",
-      weight: "400 700",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/playfair-display-latin-ext.woff2",
-      weight: "400 700",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/playfair-display-italic-latin.woff2",
-      weight: "400 700",
-      style: "italic",
-    },
-    {
-      path: "../../public/fonts/playfair-display-italic-latin-ext.woff2",
-      weight: "400 700",
-      style: "italic",
-    },
-  ],
-  variable: "--font-playfair",
-  display: "swap",
-});
-
-const jakarta = localFont({
-  src: [
-    {
-      path: "../../public/fonts/plus-jakarta-sans-latin.woff2",
-      weight: "400 700",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/plus-jakarta-sans-latin-ext.woff2",
-      weight: "400 700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-jakarta",
-  display: "swap",
-});
 import { siteConfig } from "@/config/siteConfig";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -161,8 +116,37 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="tr" className={`scroll-smooth ${playfair.variable} ${jakarta.variable}`}>
+    <html lang="tr" className="scroll-smooth">
       <head>
+        {/* Preload primary fonts for instantaneous zero-FOUT rendering */}
+        <link
+          rel="preload"
+          href="/fonts/plus-jakarta-sans-latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/plus-jakarta-sans-latin-ext.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/playfair-display-latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/playfair-display-latin-ext.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
