@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { MessageCircle } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function WhatsAppFloat() {
   const whatsappUrl = siteConfig.contact.whatsappUrl;
@@ -11,6 +14,7 @@ export default function WhatsAppFloat() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackWhatsAppClick("floating_button")}
         className="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5"
         aria-label="WhatsApp'tan Hızlı Bilgi Alın"
       >

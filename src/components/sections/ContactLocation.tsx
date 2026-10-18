@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MapPin, Navigation, Send, Compass, Phone, Clock, Instagram, CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 import FaqAccordion from "./FaqAccordion";
+import { trackWhatsAppClick, trackInstagramClick } from "@/lib/analytics";
 
 export default function ContactLocation() {
   const [name, setName] = useState("");
@@ -21,6 +22,7 @@ export default function ContactLocation() {
     }
 
     const waUrl = `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(msg)}`;
+    trackWhatsAppClick("contact_form_submit", consultType);
     window.open(waUrl, "_blank");
   };
 
@@ -190,10 +192,16 @@ export default function ContactLocation() {
                   <Phone className="w-4 h-4 text-sage flex-shrink-0" />
                   <span>{siteConfig.contact.phone}</span>
                 </p>
-                <p className="flex items-center gap-2">
+                <a
+                  href={siteConfig.contact.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackInstagramClick("contact_section_info")}
+                  className="flex items-center gap-2 hover:text-terracotta transition-colors"
+                >
                   <Instagram className="w-4 h-4 text-sage flex-shrink-0" />
                   <span>{siteConfig.contact.instagram}</span>
-                </p>
+                </a>
               </div>
 
               {/* KONUM & ULAŞIM BİLGİSİ KARTI */}

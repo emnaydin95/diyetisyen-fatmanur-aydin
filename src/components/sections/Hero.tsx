@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { MapPin, ArrowRight, MessageSquare, Star, Utensils, Smartphone, Activity, User, ShieldCheck } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function Hero() {
   const whatsappUrl = siteConfig.contact.whatsappUrl;
@@ -38,6 +41,7 @@ export default function Hero() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick("hero_button")}
                 className="inline-flex justify-center items-center gap-2 bg-brandSurface hover:bg-[#EAE5DD] text-charcoal font-semibold px-6 py-3.5 rounded-xl border border-borderHairline transition-all text-base"
               >
                 <MessageSquare className="w-4 h-4 text-emerald-600" />

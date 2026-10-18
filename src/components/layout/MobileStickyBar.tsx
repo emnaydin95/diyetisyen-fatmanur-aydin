@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { MessageCircle, Calendar } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function MobileStickyBar() {
   const whatsappUrl = siteConfig.contact.whatsappUrl;
@@ -11,6 +14,7 @@ export default function MobileStickyBar() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackWhatsAppClick("mobile_sticky_bar")}
         className="flex-1 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 shadow active:scale-95 transition-transform"
         aria-label="WhatsApp'tan Yazın"
       >

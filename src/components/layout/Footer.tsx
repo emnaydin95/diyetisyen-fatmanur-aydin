@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { Instagram, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackInstagramClick } from "@/lib/analytics";
 
 export default function Footer() {
   return (
@@ -39,6 +42,7 @@ export default function Footer() {
                 href={siteConfig.contact.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackInstagramClick("footer_social_icon")}
                 className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-terracotta transition-colors"
                 aria-label="Instagram"
               >

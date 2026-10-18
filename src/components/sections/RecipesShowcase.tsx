@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { Instagram, Play, ArrowRight, Clock, Flame } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackInstagramClick } from "@/lib/analytics";
 
 export default function RecipesShowcase() {
   return (
@@ -22,6 +25,7 @@ export default function RecipesShowcase() {
             href={siteConfig.contact.instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackInstagramClick("recipes_showcase_header")}
             className="inline-flex items-center gap-2 text-xs font-bold text-terracotta hover:text-terracotta-dark bg-white px-4 py-2.5 rounded-xl border border-borderHairline shadow-sm hover:shadow transition-all"
           >
             <Instagram className="w-4 h-4" />

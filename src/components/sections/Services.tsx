@@ -17,6 +17,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function Services() {
   const [selectedCategory, setSelectedCategory] = useState<string>("Tümü");
@@ -163,6 +164,7 @@ export default function Services() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick("service_card", service.title)}
                   className={`w-full py-2.5 text-center text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 ${
                     service.isPopular
                       ? "bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm"

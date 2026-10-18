@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { MessageCircle, Menu, X, Calendar } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -58,6 +59,7 @@ export default function Navbar() {
               href={siteConfig.contact.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick("navbar_desktop")}
               className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2.5 rounded-xl border border-sage/30 text-sage hover:bg-sage/10 transition-all"
             >
               <MessageCircle className="w-4 h-4 text-emerald-600" />
@@ -129,6 +131,10 @@ export default function Navbar() {
                 href={siteConfig.contact.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  trackWhatsAppClick("navbar_mobile_menu");
+                  setMobileMenuOpen(false);
+                }}
                 className="flex-1 py-2.5 bg-emerald-600 text-white rounded-xl text-xs font-bold text-center flex items-center justify-center gap-1.5"
               >
                 <MessageCircle className="w-4 h-4" />
