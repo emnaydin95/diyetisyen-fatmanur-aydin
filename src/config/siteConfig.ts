@@ -89,6 +89,9 @@ export const siteConfig = {
     ],
     domain: "https://diyetisyenfatmanuraydin.com.tr",
   },
+  analytics: {
+    googleAnalyticsId: "G-XC05319SJD",
+  },
   services: [
     {
       id: "online-diyet",
