@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-playfair: 'Playfair Display', serif;
-  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
-}
 
 html {
   scroll-behavior: smooth;
