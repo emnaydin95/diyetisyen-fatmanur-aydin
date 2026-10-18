@@ -17,6 +17,7 @@ export interface RecipeItem {
   description: string;
   ingredients: string[];
   instructions: string[];
+  image?: string;
   instagramUrl?: string;
   isReels?: boolean;
   views?: string;
@@ -217,6 +218,7 @@ export const siteConfig = {
       prepTime: "15 dk",
       calories: "90 kcal / adet",
       description: "Kahvenin yanına rafine şekersiz, unsuz ve tereyağsız; sadece 15 dakikada hazırlanan pratik fit kurabiye.",
+      image: "/images/recipes/cookie-fit.jpg",
       ingredients: [
         "2 adet olgun muz",
         "1 adet yumurta",
@@ -242,6 +244,7 @@ export const siteConfig = {
       prepTime: "5 dk",
       calories: "85 kcal",
       description: "Doğal bromelain kaynağı ananas ve taze maydanoz ile vücuttaki fazla sıvıyı uzaklaştırmaya, şişkinliği rahatlatmaya yardımcı ferahlatıcı smoothie.",
+      image: "/images/recipes/smoothie-maydanoz.jpg",
       ingredients: [
         "Yarım demet taze maydanoz (yıkanmış ve ayıklanmış)",
         "1 kalın dilim taze ananas (doğal bromelain kaynağı)",
@@ -266,6 +269,7 @@ export const siteConfig = {
       prepTime: "25 dk",
       calories: "165 kcal / dilim",
       description: "Klasik haşlanmış yumurta sevmeyenlere veya kahvaltıda pratiklik arayanlara lif ve protein deposu nefis fırın lezzeti.",
+      image: "/images/recipes/tuzlu-kek.jpg",
       ingredients: [
         "2 adet yumurta",
         "1 su bardağı yulaf ezmesi",

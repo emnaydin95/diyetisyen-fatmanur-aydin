@@ -36,10 +36,21 @@ export default function RecipesPage() {
               className="bg-white rounded-3xl overflow-hidden border border-borderHairline shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between"
             >
               <div>
-                <div className="aspect-[16/10] bg-brandSurface flex items-center justify-center p-6 border-b border-borderHairline text-center group-hover:bg-[#EAE5DD] transition-colors">
-                  <span className="editorial-title text-xl font-bold text-sage">
-                    {rec.title}
-                  </span>
+                <div className="aspect-[16/10] relative overflow-hidden bg-brandSurface border-b border-borderHairline group">
+                  {rec.image ? (
+                    <img
+                      src={rec.image}
+                      alt={rec.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center p-6 text-center group-hover:bg-[#EAE5DD] transition-colors">
+                      <span className="editorial-title text-xl font-bold text-sage">
+                        {rec.title}
+                      </span>
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
                 <div className="p-6">
                   <span className="text-[10px] font-bold uppercase bg-sage-soft text-sage px-2.5 py-0.5 rounded-full inline-block mb-3">

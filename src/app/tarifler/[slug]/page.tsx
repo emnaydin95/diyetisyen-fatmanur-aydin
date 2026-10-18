@@ -44,6 +44,17 @@ export default function RecipeDetailPage({ params }: Props) {
           <span>Tüm Tariflere Geri Dön</span>
         </Link>
 
+        {/* Recipe Image Banner */}
+        {recipe.image && (
+          <div className="w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden border border-borderHairline shadow-md relative group">
+            <img
+              src={recipe.image}
+              alt={recipe.title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+          </div>
+        )}
+
         {/* Recipe Title & Meta */}
         <div>
           <span className="text-xs font-bold uppercase tracking-widest text-terracotta bg-terracotta-soft px-3 py-1 rounded-full">

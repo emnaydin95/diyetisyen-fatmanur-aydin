@@ -35,14 +35,22 @@ export default function RecipesShowcase() {
           {/* Recipe 1 */}
           <Link
             href={`/tarifler/${siteConfig.recipes[0].slug}`}
-            className="bg-white rounded-3xl overflow-hidden border border-borderHairline shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between"
+            className="bg-white rounded-3xl overflow-hidden border border-borderHairline shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between"
           >
-            <div className="aspect-[9/11] bg-gradient-to-t from-black/80 via-black/30 to-[#EAE5DD] relative flex flex-col justify-end p-5 overflow-hidden">
+            <div className="aspect-[9/11] relative flex flex-col justify-end p-5 overflow-hidden">
+              {siteConfig.recipes[0].image && (
+                <img
+                  src={siteConfig.recipes[0].image}
+                  alt={siteConfig.recipes[0].title}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent"></div>
               <div className="relative z-10 text-white">
                 <span className="text-[10px] font-bold uppercase bg-sage px-2.5 py-0.5 rounded-full mb-2 inline-block">
                   {siteConfig.recipes[0].category}
                 </span>
-                <h4 className="text-sm font-bold group-hover:text-terracotta-soft transition-colors">
+                <h4 className="text-sm font-bold group-hover:text-terracotta-soft transition-colors drop-shadow-sm">
                   {siteConfig.recipes[0].title}
                 </h4>
                 <div className="flex items-center gap-3 text-[11px] text-gray-200 mt-2">
@@ -60,14 +68,22 @@ export default function RecipesShowcase() {
           {/* Recipe 2 */}
           <Link
             href={`/tarifler/${siteConfig.recipes[1].slug}`}
-            className="bg-white rounded-3xl overflow-hidden border border-borderHairline shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between"
+            className="bg-white rounded-3xl overflow-hidden border border-borderHairline shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between"
           >
-            <div className="aspect-[9/11] bg-gradient-to-t from-black/80 via-black/30 to-[#E3ECE7] relative flex flex-col justify-end p-5 overflow-hidden">
+            <div className="aspect-[9/11] relative flex flex-col justify-end p-5 overflow-hidden">
+              {siteConfig.recipes[1].image && (
+                <img
+                  src={siteConfig.recipes[1].image}
+                  alt={siteConfig.recipes[1].title}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent"></div>
               <div className="relative z-10 text-white">
                 <span className="text-[10px] font-bold uppercase bg-terracotta px-2.5 py-0.5 rounded-full mb-2 inline-block">
                   {siteConfig.recipes[1].category}
                 </span>
-                <h4 className="text-sm font-bold group-hover:text-terracotta-soft transition-colors">
+                <h4 className="text-sm font-bold group-hover:text-terracotta-soft transition-colors drop-shadow-sm">
                   {siteConfig.recipes[1].title}
                 </h4>
                 <div className="flex items-center gap-3 text-[11px] text-gray-200 mt-2">
@@ -82,25 +98,31 @@ export default function RecipesShowcase() {
             </div>
           </Link>
 
-          {/* Card 3: 9:16 Instagram Reels Video Showcase */}
+          {/* Card 3: 9:16 Instagram Reels Video Showcase with Real Reel Cover */}
           <a
-            href={siteConfig.contact.instagramUrl}
+            href="https://www.instagram.com/reel/DIeHwAtoh-G/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white rounded-3xl overflow-hidden border-2 border-sage/30 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between relative"
+            className="bg-white rounded-3xl overflow-hidden border-2 border-sage/40 shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between relative"
           >
-            <div className="aspect-[9/11] bg-gradient-to-t from-black/90 via-black/40 to-[#4A6B5D] relative flex flex-col justify-end p-5 overflow-hidden">
-              <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+            <div className="aspect-[9/11] relative flex flex-col justify-end p-5 overflow-hidden">
+              <img
+                src="/images/reel-smoothie-cover.jpg"
+                alt="Diyetisyen Fatmanur Aydın Instagram Reels"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+              <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white group-hover:scale-110 transition-transform shadow">
                 <Play className="w-4 h-4 fill-white translate-x-0.5" />
               </div>
               <div className="relative z-10 text-white">
                 <span className="text-[10px] font-bold uppercase bg-white/20 backdrop-blur px-2.5 py-0.5 rounded-full mb-2 inline-block">
                   Instagram Reels Vitrini
                 </span>
-                <h4 className="text-sm font-bold group-hover:text-terracotta-soft transition-colors">
-                  Restoranda Kilo Aldırmayan Seçimler
+                <h4 className="text-sm font-bold group-hover:text-terracotta-soft transition-colors drop-shadow-sm">
+                  Ödem Atmaya Yardımcı: Maydanoz Smoothie
                 </h4>
-                <p className="text-[11px] text-gray-200 mt-1">Dışarıda yemek yerken 3 altın kural</p>
+                <p className="text-[11px] text-gray-200 mt-1">Fatmanur Hanım ile Mutfakta Hazırlanışı İzleyin</p>
               </div>
             </div>
             <div className="p-4 flex items-center justify-between text-xs font-semibold text-terracotta border-t border-borderHairline">
@@ -112,14 +134,22 @@ export default function RecipesShowcase() {
           {/* Recipe 4 */}
           <Link
             href={`/tarifler/${siteConfig.recipes[2].slug}`}
-            className="bg-white rounded-3xl overflow-hidden border border-borderHairline shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between"
+            className="bg-white rounded-3xl overflow-hidden border border-borderHairline shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between"
           >
-            <div className="aspect-[9/11] bg-gradient-to-t from-black/80 via-black/30 to-[#DFE5E7] relative flex flex-col justify-end p-5 overflow-hidden">
+            <div className="aspect-[9/11] relative flex flex-col justify-end p-5 overflow-hidden">
+              {siteConfig.recipes[2].image && (
+                <img
+                  src={siteConfig.recipes[2].image}
+                  alt={siteConfig.recipes[2].title}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent"></div>
               <div className="relative z-10 text-white">
                 <span className="text-[10px] font-bold uppercase bg-sage px-2.5 py-0.5 rounded-full mb-2 inline-block">
                   {siteConfig.recipes[2].category}
                 </span>
-                <h4 className="text-sm font-bold group-hover:text-terracotta-soft transition-colors">
+                <h4 className="text-sm font-bold group-hover:text-terracotta-soft transition-colors drop-shadow-sm">
                   {siteConfig.recipes[2].title}
                 </h4>
                 <div className="flex items-center gap-3 text-[11px] text-gray-200 mt-2">
