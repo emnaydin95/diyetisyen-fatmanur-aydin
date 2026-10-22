@@ -31,3 +31,7 @@ next-env.d.ts
 
 *.json
 .credentials/
+scripts/downloaded_*
+scripts/denge-worker-full.js
+scripts/denge_svg_*
+

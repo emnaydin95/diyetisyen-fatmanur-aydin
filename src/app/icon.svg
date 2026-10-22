@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- Brand Sage Gradient -->
+    <linearGradient id="sageBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A6B5D"/>
+      <stop offset="100%" stop-color="#2D483C"/>
+    </linearGradient>
+    <!-- Brand Terracotta Gradient -->
+    <linearGradient id="terraAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E28466"/>
+      <stop offset="100%" stop-color="#C55D3D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle Base with slight rounded padding -->
+  <rect width="64" height="64" rx="16" fill="url(#sageBadge)"/>
+
+  <!-- Subtle inner glowing ring -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.12"/>
+
+  <!-- Denge (Balance) Scales with Vitality Elements -->
+  <!-- Central Pivot & Mast -->
+  <circle cx="32" cy="15" r="3.2" fill="#FAF8F5"/>
+  <path d="M32 18.5 V46 M22 46 H42" stroke="#FAF8F5" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- Balance Beam in equilibrium -->
+  <path d="M14 26 H50" stroke="#FAF8F5" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- Central Fulcrum Accent -->
+  <circle cx="32" cy="26" r="2.8" fill="url(#terraAccent)"/>
+
+  <!-- Left Scale Pan: Holds Botanical Leaf / Nutrition -->
+  <path d="M14 26 L8 36 M14 26 L20 36" stroke="#FAF8F5" stroke-width="1.6" stroke-linecap="round" opacity="0.85"/>
+  <path d="M6.5 36 C6.5 42 21.5 42 21.5 36 Z" fill="url(#terraAccent)" stroke="#FAF8F5" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- Left Pan Sprout Dot -->
+  <circle cx="14" cy="33.5" r="1.8" fill="#FAF8F5"/>
+
+  <!-- Right Scale Pan: Holds Body Composition / Metric -->
+  <path d="M50 26 L44 36 M50 26 L56 36" stroke="#FAF8F5" stroke-width="1.6" stroke-linecap="round" opacity="0.85"/>
+  <path d="M42.5 36 C42.5 42 57.5 42 57.5 36 Z" fill="url(#terraAccent)" stroke="#FAF8F5" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- Right Pan Sprout Dot -->
+  <circle cx="50" cy="33.5" r="1.8" fill="#FAF8F5"/>
+
+  <!-- Top Crown: Delicate Sprout of Life -->
+  <path d="M32 11.5 C32 8.5 36 7 36 7 C36 7 36.5 10.5 33 11.5" fill="url(#terraAccent)"/>
+</svg>

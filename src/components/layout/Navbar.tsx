@@ -11,14 +11,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Announcement Bar */}
-      <div className="bg-sage text-white text-xs py-2 px-4 text-center font-medium flex items-center justify-center gap-2">
-        <span>📍 Ankara Keçiören / Etlik Kliniği Yüz Yüze Randevuları ve Online Danışmanlık Kontenjanları Açılmıştır</span>
-        <a href="#randevu" className="underline hover:text-terracotta-soft transition-colors ml-2 font-semibold">
-          Randevu Al &rarr;
-        </a>
-      </div>
-
       {/* Main Sticky Navbar */}
       <header className="sticky top-0 z-40 bg-brandBg/90 backdrop-blur-md border-b border-borderHairline transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
