@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Star, ExternalLink, Quote, ChevronDown, ChevronUp, CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackEvent } from "@/lib/analytics";
 
 export default function Testimonials() {
   const [showAll, setShowAll] = useState(false);
@@ -27,9 +28,10 @@ export default function Testimonials() {
             </p>
           </div>
           <a
-            href={siteConfig.contact.googleMapsUrl}
+            href={siteConfig.contact.googleReviewsUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackEvent("google_reviews_click", { event_category: "SocialProof", click_location: "testimonials_header" })}
             className="inline-flex items-center gap-2 text-xs font-bold text-sage hover:text-sage-dark bg-white px-4 py-2.5 rounded-xl border border-borderHairline shadow-sm hover:shadow transition-all self-start md:self-auto"
           >
             <ExternalLink className="w-4 h-4" />

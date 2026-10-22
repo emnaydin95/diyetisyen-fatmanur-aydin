@@ -3,7 +3,7 @@
 import React from "react";
 import { MapPin, ArrowRight, MessageSquare, Star, Utensils, Smartphone, Activity, User, ShieldCheck } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
-import { trackWhatsAppClick } from "@/lib/analytics";
+import { trackWhatsAppClick, trackEvent } from "@/lib/analytics";
 
 export default function Hero() {
   const whatsappUrl = siteConfig.contact.whatsappUrl;
@@ -50,16 +50,24 @@ export default function Hero() {
             </div>
 
             {/* Social Proof Trust Bar */}
-            <div className="pt-6 border-t border-borderHairline/80 flex items-center gap-6">
-              <div className="flex items-center gap-1 text-amber-500">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-amber-500" />
-                ))}
-              </div>
-              <div className="text-xs sm:text-sm text-mutedSlate">
-                <span className="font-bold text-charcoal">5.0 / 5.0</span> Google Haritalar Memnuniyeti 
-                <span className="hidden sm:inline font-medium text-sage"> • 120+ Doğrulanmış Danışan Yorumu</span>
-              </div>
+            <div className="pt-6 border-t border-borderHairline/80">
+              <a
+                href={siteConfig.contact.googleReviewsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackEvent("google_reviews_click", { event_category: "SocialProof", click_location: "hero_stars" })}
+                className="inline-flex items-center gap-2.5 group hover:opacity-90 transition-opacity"
+                aria-label="Google Haritalar Yorumlarını İnceleyin"
+              >
+                <div className="flex items-center gap-1 text-amber-500">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-amber-500" />
+                  ))}
+                </div>
+                <div className="text-xs sm:text-sm text-mutedSlate group-hover:text-charcoal transition-colors">
+                  <span className="font-bold text-charcoal">5.0 / 5.0</span> Google Haritalar Puanı
+                </div>
+              </a>
             </div>
           </div>
 

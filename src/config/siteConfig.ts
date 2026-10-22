@@ -51,6 +51,7 @@ export const siteConfig = {
     instagram: "@diyetisyenfatmanuraydin",
     instagramUrl: "https://www.instagram.com/diyetisyenfatmanuraydin/",
     googleMapsUrl: "https://maps.app.goo.gl/d8SP1qVd95PDrzCn9?g_st=ic",
+    googleReviewsUrl: "https://www.google.com/maps/place/Diyetisyen+Fatmanur+Ayd%C4%B1n/@39.9720843,32.846379,15z/data=!4m8!3m7!1s0x14d34d0f1ba1d067:0x4b19b28931ee50b2!8m2!3d39.9740543!4d32.8363077!9m1!1b1!16s%2Fg%2F11wy9llt9f",
   },
   location: {
     street: "Etlik Caddesi, Aşağı Eğlence Mah., Sarayköy Sk. No: 16/A",

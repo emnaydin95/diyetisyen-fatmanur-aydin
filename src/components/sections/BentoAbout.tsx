@@ -98,25 +98,31 @@ export default function BentoAbout() {
                 <Award className="w-6 h-6" />
               </div>
               <h3 className="editorial-title text-2xl font-bold text-charcoal mb-3">
-                Danışan Başarı & Takip İstatistikleri
+                Klinik & Danışmanlık Yaklaşımı
               </h3>
               <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-4">
+                <a
+                  href={siteConfig.contact.googleReviewsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/90 hover:bg-white p-4 rounded-2xl border border-borderHairline text-center transition-all group cursor-pointer"
+                  aria-label="Google Haritalar Puanı"
+                >
+                  <div className="text-xl sm:text-2xl font-bold text-terracotta group-hover:scale-105 transition-transform">5.0 ⭐</div>
+                  <div className="text-[11px] sm:text-xs text-mutedSlate mt-1 font-medium">Google Haritalar Puanı</div>
+                </a>
                 <div className="bg-white/90 p-4 rounded-2xl border border-borderHairline text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-terracotta">500+</div>
-                  <div className="text-[11px] sm:text-xs text-mutedSlate mt-1 font-medium">Mutlu Danışan</div>
+                  <div className="text-xl sm:text-2xl font-bold text-sage">Birebir</div>
+                  <div className="text-[11px] sm:text-xs text-mutedSlate mt-1 font-medium">Kişiye Özel & Tahlil Odaklı</div>
                 </div>
                 <div className="bg-white/90 p-4 rounded-2xl border border-borderHairline text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-sage">%98</div>
-                  <div className="text-[11px] sm:text-xs text-mutedSlate mt-1 font-medium">Hedefe Ulaşma</div>
-                </div>
-                <div className="bg-white/90 p-4 rounded-2xl border border-borderHairline text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-charcoal">5.0 ⭐</div>
-                  <div className="text-[11px] sm:text-xs text-mutedSlate mt-1 font-medium">Google Puanı</div>
+                  <div className="text-xl sm:text-2xl font-bold text-charcoal">Tanita</div>
+                  <div className="text-[11px] sm:text-xs text-mutedSlate mt-1 font-medium">Klinik Vücut Analizi</div>
                 </div>
               </div>
             </div>
             <p className="mt-6 text-[11px] text-mutedSlate">
-              * İstatistikler kliniğimizde takip edilen danışanlarımızın kilo koruma ve memnuniyet anketlerine dayanmaktadır.
+              * Kliniğimizde bilimsel tahlil analizi, profesyonel Tanita cihazı ve sürekli motivasyon desteğiyle çalışmaktayız.
             </p>
           </div>
 
