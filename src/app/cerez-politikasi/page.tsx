@@ -85,7 +85,7 @@ export default function CookiePolicyPage() {
                   </span>
                 </div>
                 <p className="text-xs text-mutedSlate leading-relaxed">
-                  Web sitemizi daha önce ziyaret edip etmediğinizi, hesaplayıcı araçlarında (Beden Kitle İndeksi, Günlük Su İhtiyacı) seçtiğiniz parametreleri hatırlayarak size kişiselleştirilmiş ve akıcı bir deneyim sunar.
+                  Web sitemizdeki temel arayüz tercihlerini (örneğin çerez onay tercihinizi) hatırlayarak akıcı ve tutarlı bir ziyaretçi deneyimi sunar.
                 </p>
               </div>
 
