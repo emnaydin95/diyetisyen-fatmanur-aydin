@@ -3,7 +3,7 @@
 import React from "react";
 import { MessageCircle, Calendar } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
-import { trackWhatsAppClick } from "@/lib/analytics";
+import { trackWhatsAppClick, trackEvent } from "@/lib/analytics";
 
 export default function MobileStickyBar() {
   const whatsappUrl = siteConfig.contact.whatsappUrl;
@@ -22,7 +22,8 @@ export default function MobileStickyBar() {
         <span>WhatsApp</span>
       </a>
       <a
-        href="#randevu"
+        href="/#randevu"
+        onClick={() => trackEvent("appointment_cta_click", { event_category: "Navigation", click_location: "mobile_sticky_bar" })}
         className="flex-1 py-3 bg-terracotta hover:bg-terracotta-dark text-white rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 shadow active:scale-95 transition-transform"
         aria-label="Randevu Planla"
       >

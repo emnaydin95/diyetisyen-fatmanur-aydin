@@ -5,7 +5,7 @@ import Link from "next/link";
 import { MapPin, Navigation, Send, Compass, Phone, Clock, Instagram, CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 import FaqAccordion from "./FaqAccordion";
-import { trackWhatsAppClick, trackInstagramClick } from "@/lib/analytics";
+import { trackWhatsAppClick, trackInstagramClick, trackPhoneClick } from "@/lib/analytics";
 
 export default function ContactLocation() {
   const [name, setName] = useState("");
@@ -27,7 +27,8 @@ export default function ContactLocation() {
   };
 
   return (
-    <section id="iletisim" className="py-20 bg-brandBg">
+    <section id="iletisim" className="py-20 bg-brandBg scroll-mt-20">
+      <div id="randevu" className="scroll-mt-24"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -188,10 +189,15 @@ export default function ContactLocation() {
                     <p className="text-mutedSlate text-[11px]">Pazar & Pazartesi: Kapalı</p>
                   </div>
                 </div>
-                <p className="flex items-center gap-2">
-                  <Phone className="w-4 h-4 text-sage flex-shrink-0" />
-                  <span>{siteConfig.contact.phone}</span>
-                </p>
+                <a
+                  href={`tel:${siteConfig.contact.phoneCallable}`}
+                  onClick={() => trackPhoneClick("contact_section")}
+                  className="flex items-center gap-2 hover:text-terracotta transition-colors group"
+                  aria-label="Telefon ile Ara"
+                >
+                  <Phone className="w-4 h-4 text-sage group-hover:text-terracotta transition-colors flex-shrink-0" />
+                  <span className="font-semibold text-charcoal group-hover:text-terracotta transition-colors">{siteConfig.contact.phone}</span>
+                </a>
                 <a
                   href={siteConfig.contact.instagramUrl}
                   target="_blank"

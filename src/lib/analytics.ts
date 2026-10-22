@@ -27,3 +27,19 @@ export const trackInstagramClick = (location: string, target?: string) => {
     click_location: location,
   });
 };
+
+export const trackPhoneClick = (location: string) => {
+  trackEvent("phone_call_click", {
+    event_category: "Lead",
+    event_label: location,
+    click_location: location,
+  });
+};
+
+export const trackCalculatorUse = (toolType: "bmi" | "water", result: string) => {
+  trackEvent("calculator_used", {
+    event_category: "Engagement",
+    event_label: result,
+    calculator_type: toolType,
+  });
+};

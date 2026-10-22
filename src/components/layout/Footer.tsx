@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { Instagram, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
-import { trackInstagramClick } from "@/lib/analytics";
+import { trackInstagramClick, trackPhoneClick } from "@/lib/analytics";
 
 export default function Footer() {
   return (
@@ -25,10 +25,15 @@ export default function Footer() {
                 <MapPin className="w-3.5 h-3.5 text-sage-light flex-shrink-0" />
                 <span>{siteConfig.location.street}, {siteConfig.location.district} / {siteConfig.location.city}</span>
               </p>
-              <p className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-sage-light flex-shrink-0" />
-                <span>{siteConfig.contact.phone}</span>
-              </p>
+              <a
+                href={`tel:${siteConfig.contact.phoneCallable}`}
+                onClick={() => trackPhoneClick("footer")}
+                className="flex items-center gap-2 hover:text-white transition-colors group"
+                aria-label="Telefon ile Ara"
+              >
+                <Phone className="w-3.5 h-3.5 text-sage-light group-hover:text-terracotta transition-colors flex-shrink-0" />
+                <span className="group-hover:text-white transition-colors">{siteConfig.contact.phone}</span>
+              </a>
               <div className="flex items-start gap-2 text-white/70">
                 <Clock className="w-3.5 h-3.5 text-sage-light flex-shrink-0 mt-0.5" />
                 <div className="space-y-0.5">

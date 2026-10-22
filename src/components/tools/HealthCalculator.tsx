@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Calculator, Droplets, MessageCircle, ArrowRight } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { trackWhatsAppClick, trackCalculatorUse } from "@/lib/analytics";
 
 export default function HealthCalculator() {
   const [activeTab, setActiveTab] = useState<"bmi" | "water">("bmi");
@@ -91,7 +92,10 @@ export default function HealthCalculator() {
           <div className="flex justify-center mb-8">
             <div className="bg-white/80 p-1.5 rounded-2xl border border-borderHairline inline-flex gap-2">
               <button
-                onClick={() => setActiveTab("bmi")}
+                onClick={() => {
+                  setActiveTab("bmi");
+                  trackCalculatorUse("bmi", `BKİ: ${bmiResult}`);
+                }}
                 className={`px-5 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-2 ${
                   activeTab === "bmi"
                     ? "bg-sage text-white shadow"
@@ -102,7 +106,10 @@ export default function HealthCalculator() {
                 Beden Kitle İndeksi (BKİ)
               </button>
               <button
-                onClick={() => setActiveTab("water")}
+                onClick={() => {
+                  setActiveTab("water");
+                  trackCalculatorUse("water", `Su: ${waterResult}L`);
+                }}
                 className={`px-5 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-2 ${
                   activeTab === "water"
                     ? "bg-sage text-white shadow"
@@ -240,6 +247,12 @@ export default function HealthCalculator() {
                 href={activeTab === "bmi" ? getBmiWhatsAppLink() : getWaterWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  trackWhatsAppClick(
+                    activeTab === "bmi" ? "calculator_bmi" : "calculator_water",
+                    activeTab === "bmi" ? `BKİ: ${bmiResult} (${bmiCategory})` : `Su: ${waterResult}L`
+                  )
+                }
                 className="w-full py-3.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
