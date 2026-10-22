@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Star, ExternalLink, Quote, ChevronDown, ChevronUp, CheckCircle2 } from "lucide-react";
+import { Star, ExternalLink, Quote, ChevronDown, ChevronUp } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 import { trackEvent } from "@/lib/analytics";
 
@@ -9,33 +9,42 @@ export default function Testimonials() {
   const [showAll, setShowAll] = useState(false);
   const displayedReviews = showAll ? siteConfig.reviews : siteConfig.reviews.slice(0, 8);
 
+  const getInitials = (name: string) => {
+    const parts = name.trim().split(" ");
+    if (parts.length >= 2) {
+      return (parts[0][0] + parts[1][0]).toUpperCase();
+    }
+    return name.slice(0, 2).toUpperCase();
+  };
+
   return (
     <section id="yorumlar" className="py-20 bg-brandBg border-b border-borderHairline">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sage-soft text-sage text-xs font-semibold mb-3">
-              <CheckCircle2 className="w-3.5 h-3.5 text-sage" />
-              <span>Google Haritalar Doğrulanmış Yorumlar</span>
-            </div>
-            <h2 className="editorial-title text-3xl sm:text-4xl font-bold mt-1 text-charcoal">
-              Gerçek Danışan Deneyimleri <span className="text-sage italic">(5.0 ★★★★★)</span>
+            <h2 className="editorial-title text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal tracking-tight">
+              Danışan Deneyimleri
             </h2>
-            <p className="text-xs text-mutedSlate mt-1 max-w-xl">
-              Keçiören kliniğimizde yüz yüze ve online danışanlarımızın Google Haritalar profilimize bıraktığı tarafsız değerlendirmeler.
+            <p className="text-sm sm:text-base text-mutedSlate mt-2.5 max-w-xl font-normal leading-relaxed">
+              Birlikte çıktığımız beslenme ve sağlıklı yaşam yolculuklarından danışanlarımızın samimi paylaşımları.
             </p>
           </div>
+
           <a
             href={siteConfig.contact.googleReviewsUrl}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackEvent("google_reviews_click", { event_category: "SocialProof", click_location: "testimonials_header" })}
-            className="inline-flex items-center gap-2 text-xs font-bold text-sage hover:text-sage-dark bg-white px-4 py-2.5 rounded-xl border border-borderHairline shadow-sm hover:shadow transition-all self-start md:self-auto"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white hover:bg-sage-soft/70 text-charcoal hover:text-sage text-xs font-semibold border border-borderHairline shadow-sm hover:shadow transition-all self-start md:self-end"
           >
-            <ExternalLink className="w-4 h-4" />
-            <span>Google Haritalar'da İncele</span>
+            <span className="flex items-center gap-1 text-amber-500 font-bold">
+              ★ 5.0
+            </span>
+            <span className="w-1 h-1 rounded-full bg-borderHairline"></span>
+            <span className="text-mutedSlate">Google Yorumları</span>
+            <ExternalLink className="w-3.5 h-3.5 text-mutedSlate/70" />
           </a>
         </div>
 
@@ -44,30 +53,39 @@ export default function Testimonials() {
           {displayedReviews.map((rev) => (
             <div
               key={rev.id}
-              className="bg-white rounded-3xl p-6 border border-borderHairline shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative group"
+              className="bg-white rounded-2xl p-6 border border-borderHairline/80 shadow-sm hover:shadow-md hover:border-sage/30 transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-1 text-amber-500">
+                {/* 5 Stars & Quote Icon */}
+                <div className="flex items-center justify-between mb-3.5">
+                  <div className="flex items-center gap-0.5">
                     {[...Array(rev.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-amber-500" />
+                      <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <Quote className="w-5 h-5 text-borderHairline group-hover:text-sage/40 transition-colors" />
+                  <Quote className="w-4 h-4 text-borderHairline group-hover:text-sage/40 transition-colors" />
                 </div>
-                <p className="text-xs text-charcoal leading-relaxed mb-4">
+
+                {/* Review Text */}
+                <p className="text-[13px] sm:text-sm text-charcoal/85 leading-relaxed font-normal">
                   "{rev.comment}"
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-borderHairline flex items-center justify-between text-xs">
-                <div>
-                  <span className="font-bold text-charcoal block">{rev.author}</span>
-                  <span className="text-[10px] text-sage font-medium">{rev.role}</span>
+              {/* Author & Journey Info */}
+              <div className="pt-4 mt-4 border-t border-borderHairline/60 flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-brandSurface text-sage font-semibold text-xs flex items-center justify-center shrink-0 border border-borderHairline">
+                  {getInitials(rev.author)}
                 </div>
-                <div className="flex items-center gap-1 text-[10px] text-mutedSlate/70">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
-                  <span>{rev.date}</span>
+                <div className="min-w-0">
+                  <span className="font-semibold text-charcoal text-xs block truncate">
+                    {rev.author}
+                  </span>
+                  {rev.category && (
+                    <span className="text-[11px] text-mutedSlate block truncate">
+                      {rev.category}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
@@ -79,14 +97,14 @@ export default function Testimonials() {
           <div className="mt-10 text-center">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-borderHairline text-charcoal hover:bg-brandSurface text-xs font-bold shadow-sm transition-all"
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white border border-borderHairline text-charcoal hover:bg-brandSurface text-xs font-semibold shadow-sm transition-all"
             >
               <span>
                 {showAll
-                  ? "Daha Az Yorum Göster"
-                  : `Tüm Google Yorumlarını Göster (${siteConfig.reviews.length} Yorum)`}
+                  ? "Daha Az Göster"
+                  : `Tüm Yorumları Gör (${siteConfig.reviews.length})`}
               </span>
-              {showAll ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+              {showAll ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
             </button>
           </div>
         )}

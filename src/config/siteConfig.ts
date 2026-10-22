@@ -26,10 +26,9 @@ export interface RecipeItem {
 export interface ReviewItem {
   id: string;
   author: string;
-  role: string;
+  category?: string;
   rating: number;
   comment: string;
-  date: string;
 }
 
 export const siteConfig = {
@@ -325,114 +324,100 @@ export const siteConfig = {
     {
       id: "1",
       author: "Bilal K.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Kilo Yönetimi",
       rating: 5,
       comment: "2 aydır devam ediyorum. 88 kilodan 80 kiloya düştüm. İdeal kiloma 4 kilo kaldı. Fatma Hanım'a teşekkürlerimi sunuyorum. Aç bırakmadan zayıflatıyor.",
-      date: "Google Haritalar",
     },
     {
       id: "2",
       author: "Emine T.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Kilo Verme Süreci",
       rating: 5,
-      comment: "Uzun sürede kilo veremem diye düşünüp hiçbir girişimde bulunmamıştım ancak Fatma Hanım'la tanıştığımda bunun doğru olmadığını anlayıp 10 kilo vermek beni çok mutlu etti.",
-      date: "Google Haritalar",
+      comment: "Uzun sürede kilo veremem diye düşünüp hiçbir girişimde bulunmamıştım ancak Fatma Hanım'la tanıştığımda bunun doğru olmadığını anlayıp 10 kilo vermek beni çok mutlu etti. Kendisine teşekkür ediyorum.",
     },
     {
       id: "3",
       author: "Elif D.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Özel Gün & Düğün Hazırlığı",
       rating: 5,
       comment: "Nişanımın öncesinde Fatmanur Hanım'la tanıştık. Haftalık takip ile diyet programımı güncelledi ve istediğim kiloya ulaşmamı sağladı. Ayrıca her gün iletişim halindeydik. Güler yüzü ve ilgisi harika.",
-      date: "Google Haritalar",
     },
     {
       id: "4",
       author: "Çağdaş M.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Beslenme Alışkanlığı",
       rating: 5,
       comment: "Fatmanur Hanım ile haftalık görüşmelerimiz sayesinde beslenme düzenimi çok daha kolay oturtabildim. Diyet sürecinde her zaman ilgili, açıklayıcı ve motive edici bir yaklaşımı var.",
-      date: "Google Haritalar",
     },
     {
       id: "5",
       author: "Nurcan A.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Sürdürülebilir Diyet",
       rating: 5,
       comment: "Yaklaşık üç aydır Fatmanur Hanım'la diyet görüşmesine başladım. Gerçekten çok memnunum. Diyet sürecinde sanki diyet yapmıyormuş gibi beslenip kilo veriyorum. Herkese tavsiye ederim.",
-      date: "Google Haritalar",
     },
     {
       id: "6",
       author: "Sevim Ç.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Aile & Çocuk Beslenmesi",
       rating: 5,
       comment: "Canım Fatmanur hocamdan kendim için destek aldım. Hem programdan hem de süreçten o kadar çok memnun kaldım ki kızımı da getirdim. Şimdi bu güzel sürece kızımla devam ediyoruz.",
-      date: "Google Haritalar",
     },
     {
       id: "7",
       author: "Su A.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Kilo Koruma & Yaşam Tarzı",
       rating: 5,
       comment: "Güler yüzlülüğü ve samimiyeti ile o kadar güzel, hızlı ve en önemlisi sağlıklı bir biçimde kilo vermeme yardımcı oldu. En önemlisi de verdiğim kiloları korumayı ve sağlıklı beslenmeyi yaşam tarzı haline getirmeyi öğrendim.",
-      date: "Google Haritalar",
     },
     {
       id: "8",
       author: "Hamide C.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Kişiye Özel Takip",
       rating: 5,
       comment: "Fatmanur Hanım'la tanışmak ve danışanı olmak bir ayrıcalıktır. Çok başarılı, ilgili bir uzman. Birlikte istediğimiz hedeflere ve rakamlara ulaşıyoruz.",
-      date: "Google Haritalar",
     },
     {
       id: "9",
       author: "Burak A.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Kilo Yönetimi",
       rating: 5,
       comment: "Fatma Hanım anlayışlı ve güler yüzlü bir diyetisyen. Sistematik biçimde ilerleyerek kolayca kilo vermek mümkün.",
-      date: "Google Haritalar",
     },
     {
       id: "10",
       author: "Neslihan A.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Birebir Motivasyon",
       rating: 5,
       comment: "Fatmanur Hanım işinde çok başarılı bir diyetisyen gerçekten. Gerek motivasyon gerek ilgilenme gerekse sizin isteklerinize dikkat etmek konusunda çok özenli.",
-      date: "Google Haritalar",
     },
     {
       id: "11",
       author: "Fırat Ü.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Sağlıklı Kilo Verme",
       rating: 5,
       comment: "Fatmanur Hanım'dan diyet konusunda danışmanlık aldım. Yardımları sayesinde kendimi yormadan, sağlıklı bir şekilde zayıfladım.",
-      date: "Google Haritalar",
     },
     {
       id: "12",
       author: "Yiğit K.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Haftalık Program Takibi",
       rating: 5,
       comment: "Fatmanur Hanım'a çok teşekkür ediyorum. Kişiye özel haftalık farklı beslenme programının yanı sıra çok iyi motive ediyor, dilediğiniz zaman ulaşabiliyorsunuz.",
-      date: "Google Haritalar",
     },
     {
       id: "13",
       author: "Sinem Ö.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Beslenme Danışmanlığı",
       rating: 5,
       comment: "Güler yüzlü diyetisyenim. İlgisi ve bilgisiyle emin ellerde hissediyorum.",
-      date: "Google Haritalar",
     },
     {
       id: "14",
       author: "Zehra B.",
-      role: "Google Doğrulanmış Danışan",
+      category: "Klinik Danışmanlık",
       rating: 5,
       comment: "Çok memnunum canım diyetisyenim. İlgisi, enerjisi ve profesyonel yaklaşımı için çok teşekkürler.",
-      date: "Google Haritalar",
     },
   ] as ReviewItem[],
   faqs: [
