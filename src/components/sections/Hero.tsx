@@ -86,14 +86,14 @@ export default function Hero() {
                     alt="Diyetisyen Fatmanur Aydın Keçiören Kliniği"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex flex-col justify-end p-5 text-white">
-                    <span className="text-[10px] font-bold uppercase tracking-widest bg-sage px-2.5 py-0.5 rounded-full w-max mb-1.5">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end px-5 pb-14 pt-5 text-white">
+                    <span className="text-[10px] font-bold uppercase tracking-widest bg-sage px-2.5 py-0.5 rounded-full w-max mb-1.5 shadow-sm">
                       Keçiören / Etlik Kliniğimiz
                     </span>
                     <h3 className="editorial-title text-xl font-bold">
                       {siteConfig.brand.name}
                     </h3>
-                    <p className="text-[11px] text-white/80">
+                    <p className="text-[11px] text-white/85">
                       Sarayköy Sk. No: 16/A • Nezih & Ferah Muayenehane
                     </p>
                   </div>
@@ -101,7 +101,7 @@ export default function Hero() {
               </div>
 
               {/* Floating Micro UI Card 1: Kişiye Özel Beslenme */}
-              <div className="absolute -top-4 -left-6 bg-white/95 backdrop-blur shadow-lg rounded-2xl p-3 border border-borderHairline flex items-center gap-3 animate-pulse">
+              <div className="absolute -top-4 -left-6 bg-white/95 backdrop-blur shadow-lg rounded-2xl p-3 border border-borderHairline flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-sage-soft flex items-center justify-center text-sage">
                   <Utensils className="w-5 h-5" />
                 </div>
